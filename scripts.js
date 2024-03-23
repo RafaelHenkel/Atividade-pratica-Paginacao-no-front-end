@@ -36,12 +36,12 @@ listarRecados();
 
 function proximaPagina() {
   const novaPagina = page + 1;
-  window.location.href = `?pagina=${novaPagina}&limite=${limit}`;
+  window.location.href = `?page=${novaPagina}&limit=${limit}`;
 }
 
 function voltarPagina() {
-  if (pagina > 1) {
+  if (page > 1) {
     const novaPagina = page - 1;
-    window.location.href = `?pagina=${novaPagina}&limite=${limit}`;
+    window.location.href = `?page=${novaPagina}&limit=${limit}`;
   }
 }
